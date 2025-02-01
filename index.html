@@ -3,31 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Current Time</title>
     <link rel="stylesheet" href="style.css">
+    <title>Multi-Tab Website</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Current Time</h1>
-        <div class="time" id="new-york">
-            <h2>New York</h2>
-            <p id="time-ny"></p>
+    <div class="tabs">
+        <button class="tablink" onclick="openTab(event, 'tab1')">Analog Clocks</button>
+        <button class="tablink" onclick="openTab(event, 'tab2')">USA News</button>
+        <button class="tablink" onclick="openTab(event, 'tab3')">Nepal News</button>
+        <button class="tablink" onclick="openTab(event, 'tab4')">Top Movies in USA</button>
+        <button class="tablink" onclick="openTab(event, 'tab5')">Trump News</button>
+        <button class="tablink" onclick="openTab(event, 'tab6')">Smiley Face</button>
+    </div>
+
+    <div id="tab1" class="tabcontent">
+        <h1>Analog Clocks</h1>
+        <div class="clock" id="clock-ny">
+            <div class="hand hour-hand"></div>
+            <div class="hand minute-hand"></div>
+            <div class="hand second-hand"></div>
         </div>
-        <div class="time" id="london">
-            <h2>London</h2>
-            <p id="time-london"></p>
+        <div class="clock" id="clock-london">
+            <div class="hand hour-hand"></div>
+            <div class="hand minute-hand"></div>
+            <div class="hand second-hand"></div>
         </div>
-        <div class="time" id="kathmandu">
-            <h2>Kathmandu</h2>
-            <p id="time-kathmandu"></p>
-        </div>
-        <h1>Analog Clock</h1>
-        <div class="clock">
+        <div class="clock" id="clock-kathmandu">
             <div class="hand hour-hand"></div>
             <div class="hand minute-hand"></div>
             <div class="hand second-hand"></div>
         </div>
     </div>
+
+    <div id="tab2" class="tabcontent">
+        <h1>USA News</h1>
+        <div id="usa-news"></div>
+    </div>
+
+    <div id="tab3" class="tabcontent">
+        <h1>Nepal News</h1>
+        <div id="nepal-news"></div>
+    </div>
+
+    <div id="tab4" class="tabcontent">
+        <h1>Top Movies in USA</h1>
+        <div id="top-movies"></div>
+    </div>
+
+    <div id="tab5" class="tabcontent">
+        <h1>Trump News</h1>
+        <div id="trump-news"></div>
+    </div>
+
+    <div id="tab6" class="tabcontent">
+        <h1>Smiley Face</h1>
+        <div class="smiley">😊</div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
