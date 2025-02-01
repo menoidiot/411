@@ -1,49 +1,34 @@
 # My Weather Website
 
-This project is a simple web application that displays the current time in Kathmandu, New York, London, and Sydney, along with a 15-day weather forecast for these cities.
+A website that displays the current time in Kathmandu, New York, London, and Sydney, along with a 15-day weather forecast.
 
-## Project Structure
-
-```
-my-weather-website
-├── src
-│   ├── index.html        # Main HTML document
-│   ├── styles.css       # CSS styles for the website
-│   └── scripts
-│       └── app.js       # JavaScript code for fetching time and weather data
-├── .gitignore            # Files and directories to be ignored by Git
-├── package.json          # npm configuration file
-└── README.md             # Project documentation
-```
-
-## Features
-
-- Displays the current time for Kathmandu, New York, London, and Sydney.
-- Provides a 15-day weather forecast for the specified cities.
-
-## Setup Instructions
+## Installation
 
 1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/my-weather-website.git
-   ```
+    ```bash
+    git clone https://github.com/yourusername/my-weather-website.git
+    cd my-weather-website
+    ```
 
-2. Navigate to the project directory:
-   ```
-   cd my-weather-website
-   ```
-
-3. Install the required dependencies:
-   ```
-   npm install
-   ```
-
-4. Open `src/index.html` in your web browser to view the application.
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
 ## Usage
 
-- The current time for each city will be displayed on the webpage.
-- The weather forecast will be updated automatically based on the data fetched from the weather API.
+1. Start the development server:
+    ```bash
+    npm start
+    ```
+
+2. Open your browser and navigate to `http://localhost:8080`.
+
+## Dependencies
+
+- axios
+- moment-timezone
+- live-server (development dependency)
 
 ## License
 
