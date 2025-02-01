@@ -27,3 +27,14 @@ h1 {
 h2 {
     margin-bottom: 10px;
 }
+
+.flashy {
+    animation: flash 1s infinite;
+    color: red;
+}
+
+@keyframes flash {
+    0% { color: red; }
+    50% { color: yellow; }
+    100% { color: red; }
+}
